@@ -1,4 +1,4 @@
- stale
+# stale
 
 This is an add-on for [todo.sh](https://github.com/todotxt/todo.txt-cli/)
 that moves todos into a separate file called stale.txt, where you would
@@ -8,10 +8,21 @@ file. Evidently these are not urgent todos, maybe you shouldn't even have
 added them in, and also they don't really fit into a specific outline, so for
 now you will just set them aside and take another look when you have a chance.
 
-Usage:
+# Usage:
 
 ```
 todo.sh stale prune ITEM# - moves an item into your stale.txt file
 todo.sh stale ls - lists your stale todos
 todo.sh stale restore ITEM# - moves an item out of your stale.txt file back into todo.txt
+```
+
+# Installation: 
+
+See the general instalation instructions for todo.sh add-ons: https://github.com/todotxt/todo.txt-cli/wiki/Creating-and-Installing-Add-ons
+
+# Configuration: 
+
+```
+# in your .cfg file 
+export STALE_FILE="stalefile.md" # add this line if you want different stale file than `stale.txt` 
 ```
