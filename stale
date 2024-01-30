@@ -2,7 +2,7 @@
 
 ## Stale todos storage file ##
 export STALE_PATH="$TODO_DIR"
-export STALE_FILE="stale.txt"
+export STALE_FILE="${STALE_FILE:-stale.txt}"
 export STALE_FULL_PATH="$STALE_PATH/$STALE_FILE"
 #export STALE_THRESHOLD="14d"
 
